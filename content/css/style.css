@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+html,
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.sem-espaco {
+    padding: 0;
+    margin: 0
+}
+
+
+/***/
+
+.navbar {
+    margin-bottom: 0;
+    transition: 0.2s;
+}
+
+.navbar-default {
+    border: none;
+    left: 0;
+    right: 0;
+    background: #010101;
+    z-index: 3;
+    height: 124px;
+    padding: 20px 0;
+    border-radius: 0;
+}
+
+.navbar-default .navbar-nav>li>a {
+    padding: 7px 29px;
+    margin: 0 5px;
+    letter-spacing: 0.3px;
+    transition: 0.2s;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15.1765px;
+    line-height: 23px;
+    border-radius: 31px;
+    color: #FFFFFF;
+}
+
+.navbar-nav {
+    padding: 22px 0;
+    float: right;
+}
+
+.navbar-default .navbar-nav>li>a:focus,
+.navbar-default .navbar-nav>li>a:hover {
+    background: linear-gradient(180deg, #245A9E 0%, #1189CA 100%);
+    color: white;
+}
+
+.navbar-default .navbar-nav li::before a:hover {
+    content: "";
+    width: 200px;
+    height: 50px;
+    background: #ebc021;
+    position: absolute;
+}
+
+.navbar-brand {
+    padding: 0;
+}
+
+.navbar-toggle {
+    z-index: 3;
+}
+
+
+/***/
+
+.princial-banner .box-slide {
+    height: 858px;
+    padding: 0;
+    background: black;
+}
+
+.princial-banner .box-slide video {
+    width: 100%;
+    object-fit: cover;
+}
+
+
+/***/
+
+.princial-banner .slick-dots {
+    position: absolute;
+    top: 40%;
+    width: 42px;
+    left: 50%;
+    margin-left: -500px;
+    height: 100px;
+}
+
+.princial-banner .slick-dots li {
+    margin-bottom: 20px;
+}
+
+.princial-banner .slick-dots li a {
+    color: white;
+    font-size: 20px;
+    font-weight: 100;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.princial-banner .slick-dots li:hover a,
+.princial-banner .slick-dots li.slick-active a,
+.princial-banner .slick-dots li.slick-active a:hover {
+    color: #1285c7;
+}
+
+.princial-banner .slick-dots li:hover a::after {
+    background: #1285c7;
+    ;
+}
+
+.princial-banner .slick-dots li a::after {
+    content: "";
+    width: 35px;
+    height: 1px;
+    background: white;
+    position: absolute;
+    margin: -16px 0 0 -50px;
+    transition: 0.2s;
+}
+
+.princial-banner .slick-dots li.slick-active a::after {
+    background: #1188c9;
+    width: 65px;
+    margin: -16px 0 0 -80px;
+}
