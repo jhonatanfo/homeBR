@@ -88,7 +88,7 @@ body {
 }
 
 .princial-banner .box-slide video {
-    width: 810px;
+    width: 890px;
     object-fit: cover;
     margin: 0 auto;
     display: grid;
@@ -197,7 +197,12 @@ body {
 
 /* ---- */
 
-.bg-sobre {}
+.bg-sobre {
+    background-image: url("../img/bg-sobre.png");
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    padding-bottom: 216px;
+}
 
 .bg-sobre h2 {
     font-style: normal;
@@ -222,7 +227,7 @@ body {
     height: 447px;
     position: absolute;
     left: 50%;
-    margin-left: -57%;
+    margin-left: -53%;
     margin-top: 101px;
     border-radius: 0 50px 0 0;
 }
@@ -234,6 +239,7 @@ body {
     font-size: 16.4821px;
     line-height: 25px;
     color: #FFFFFF;
+    padding-right: 143px;
 }
 
 .bg-sobre-texto p span {
@@ -244,10 +250,11 @@ body {
     color: #1189CA;
     margin-top: 12px;
     position: absolute;
+    margin: 24px 0 0 9px;
 }
 
 .bg-sobre-texto h5 {
-    width: 135%;
+    width: 104%;
     height: 260px;
     background: #FFFFFF;
     box-shadow: -9px 11px 14px rgba(0, 0, 0, 0.3);
@@ -256,16 +263,189 @@ body {
     font-size: 13px;
     line-height: 20px;
     color: #1E1E1E !important;
-    margin-left: -35%;
+    margin-left: -26.7%;
     border-left: 54px solid #1189CA;
-    padding: 63px;
-    margin-bottom: 30px;
+    padding: 25px 50px 25px 93px;
+    margin-bottom: 44px;
 }
 
 .bg-sobre-texto h4 {
     font-style: normal;
     font-weight: 400;
     font-size: 13px;
-    line-height: 20px;
+    line-height: 21px;
     color: #FFFFFF;
+    padding-right: 162px;
+}
+
+
+/* ----- */
+
+.bg-cases {
+    margin-top: -115px;
+}
+
+.bg-cases h2 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26.3911px;
+    line-height: 40px;
+    color: #FFFFFF;
+    margin-bottom: 55px;
+}
+
+.bg-cases h2 b {
+    color: #1189CA;
+}
+
+.box-cases {
+    padding: 0;
+    height: 580px;
+}
+
+.box-cases .box-cases-img {
+    width: 100%;
+    height: 580px;
+    overflow: hidden;
+    position: relative;
+}
+
+.box-cases .box-cases-img img {
+    width: 100%;
+    object-fit: cover;
+    height: 580px;
+    transition: transform 0.2s;
+}
+
+.box-cases .box-cases-img:hover img {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.box-cases h3 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22.0014px;
+    line-height: 33px;
+    color: #FFFFFF;
+    position: absolute;
+    top: 50px;
+    left: 40px;
+    margin: 0;
+}
+
+.box-cases p {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16.6582px;
+    line-height: 25px;
+    color: #FFFFFF;
+    position: absolute;
+    bottom: 50px;
+    left: 37px;
+}
+
+.box-cases p span {
+    width: 24px;
+    height: 5px;
+    background: #1189CA;
+    float: left;
+    margin: 10px 0 0 -37px;
+}
+
+
+/* ----- */
+
+.bg-servicos {
+    background: white;
+    padding: 50px;
+}
+
+.bg-servicos h2 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26.3911px;
+    line-height: 40px;
+    color: #1E1E1E;
+    margin-bottom: 30px;
+}
+
+.bg-servicos h2 b {
+    color: #1189CA;
+}
+
+.bg-servicos p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 20px;
+    color: #1E1E1E;
+    padding-right: 60px;
+}
+
+.bg-servicos h3 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 72.961px;
+    line-height: 109px;
+    text-align: right;
+    color: #F7F7F7;
+}
+
+.box-servicos {
+    width: 90%;
+    height: 296px;
+    background: #F3F3F3;
+    border-radius: 20px;
+    padding: 44px 34px;
+    display: grid;
+    align-items: center;
+    margin: 0 9%;
+}
+
+.box-servicos h4 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 21px;
+    color: #1189CA;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.box-servicos p {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 18px;
+    text-align: center;
+    color: #1E1E1E;
+    padding: 0;
+}
+
+.box-servicos a {
+    background-image: url("../img/icon-mais.png");
+    width: 36px;
+    height: 36px;
+    background-color: #245A9E;
+    border: none;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 100px;
+    position: absolute;
+    bottom: -14px;
+    right: 2px;
+}
+
+.box-servicos i {
+    width: 100%;
+    height: 60px;
+    display: block;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 15px;
+}
+
+.box-servicos .icon-agendamento-digital {
+    background-image: url("../img/icon-agendamento-digital.png");
 }

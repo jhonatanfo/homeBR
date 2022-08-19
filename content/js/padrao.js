@@ -40,4 +40,8 @@ $(document).ready(function() {
         AOS.refresh();
     });
 
+    $(document).ready(function() {
+        $('#lightgallery').lightGallery();
+    });
+
 });
