@@ -392,6 +392,10 @@ body {
     color: #F7F7F7;
 }
 
+.bg-servicos h3.text-left {
+    text-align: left;
+}
+
 .box-servicos {
     width: 90%;
     height: 296px;
