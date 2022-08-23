@@ -650,10 +650,12 @@ body {
 /* --- */
 
 footer {
-    padding: 50px 0;
+    padding: 50px 0 0px 0;
 }
 
-footer img {}
+footer img {
+    margin-top: 40px;
+}
 
 footer h3 {
     font-style: normal;
@@ -661,4 +663,102 @@ footer h3 {
     font-size: 16px;
     line-height: 24px;
     color: #1189CA;
+    margin-bottom: 30px;
+}
+
+footer .menu-footer {
+    padding: 0;
+}
+
+footer .menu-footer li {
+    list-style: none;
+    margin-left: 32px;
+    margin-bottom: 20px;
+}
+
+footer .menu-footer li a {
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15.1765px;
+    line-height: 23px;
+    color: #FFFFFF;
+}
+
+footer .menu-footer li:after {
+    content: "";
+    width: 0;
+    height: 0;
+    border-top: 7px solid transparent;
+    border-bottom: 7px solid transparent;
+    border-left: 9px solid #1189CA;
+    float: left;
+    margin: 5px 0px 0 -30px;
+}
+
+footer .info-footer {
+    padding: 0;
+}
+
+footer .info-footer li {
+    list-style: none;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11.8303px;
+    line-height: 18px;
+    color: #FFFFFF;
+    margin-bottom: 16px;
+}
+
+footer .info-footer li i {
+    width: 17px;
+    height: 17px;
+    float: left;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-right: 11px;
+}
+
+footer .info-footer li i.icon-telefone-rodape {
+    background-image: url("../img/icon-telefone-footer.png");
+}
+
+footer .info-footer li i.icon-whatsapp-rodape {
+    background-image: url("../img/icon-whatsapp-footer.png");
+}
+
+footer .contato-redes-sociais {
+    width: 128px;
+    margin: inherit;
+    margin-top: 53px;
+}
+
+footer .contato-redes-sociais li i {
+    background-size: 100%;
+}
+
+footer .contato-redes-sociais li i.icon-meta {
+    width: 26px;
+}
+
+footer .contato-redes-sociais li i.icon-linkedin {
+    width: 22px;
+    height: 33px;
+}
+
+footer .contato-redes-sociais li i.icon-twitter {
+    width: 20px;
+}
+
+footer p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 20px;
+    text-align: center;
+    color: #FFFFFF;
+    margin: 0;
+    border-top: 1px solid #282828;
+    padding: 30px 0 30px 0;
+    margin-top: 55px;
 }
