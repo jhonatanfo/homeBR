@@ -477,6 +477,12 @@ body {
     position: absolute;
     bottom: -14px;
     right: -14px;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.box-servicos a:hover {
+    background-color: #0E7CCA;
 }
 
 .box-servicos i {
@@ -648,6 +654,11 @@ body {
     float: right;
     margin-right: 0;
     border: none;
+    transition: 0.2s;
+}
+
+.bg-contato form button:hover {
+    background: #245A9E;
 }
 
 .contato-redes-sociais {
@@ -670,18 +681,31 @@ body {
     display: block;
     background-position: center;
     background-repeat: no-repeat;
+    transition: 0.2s;
 }
 
 .contato-redes-sociais li i.icon-meta {
     background-image: url("../img/icon-meta-rodape.png");
 }
 
+.contato-redes-sociais li:hover i.icon-meta {
+    background-image: url("../img/icon-meta-rodape-hover.png");
+}
+
 .contato-redes-sociais li i.icon-linkedin {
     background-image: url("../img/icon-linkedin-rodape.png");
 }
 
+.contato-redes-sociais li:hover i.icon-linkedin {
+    background-image: url("../img/icon-linkedin-rodape-hover.png");
+}
+
 .contato-redes-sociais li i.icon-twitter {
     background-image: url("../img/icon-twitter-rodape.png");
+}
+
+.contato-redes-sociais li:hover i.icon-twitter {
+    background-image: url("../img/icon-twitter-rodape-hover.png");
 }
 
 
@@ -722,6 +746,11 @@ footer .menu-footer li a {
     font-size: 15.1765px;
     line-height: 23px;
     color: #FFFFFF;
+    transition: 0.2s;
+}
+
+footer .menu-footer li a:hover {
+    color: #1189ca;
 }
 
 footer .menu-footer li:after {
@@ -800,4 +829,29 @@ footer p {
     border-top: 1px solid #282828;
     padding: 30px 0 30px 0;
     margin-top: 55px;
+}
+
+nav.navbar.navbar-default.small {
+    position: fixed;
+    top: 0;
+    background: #000000f2;
+    height: 94px;
+    padding: 14px 0;
+    -webkit-box-shadow: 0 6px 13px rgb(0 0 0 / 26%);
+    -moz-box-shadow: 0 6px 13px rgb(0 0 0 / 26%);
+    box-shadow: 0 6px 13px rgb(0 0 0 / 26%);
+    border-radius: 0;
+}
+
+nav.navbar.navbar-default.large {
+    position: absolute;
+    top: 0;
+}
+
+nav.navbar.navbar-default.small .logo {
+    width: 74%;
+}
+
+nav.navbar.navbar-default.small .navbar-nav {
+    padding: 15px 0 22px 0;
 }
