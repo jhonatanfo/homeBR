@@ -19,10 +19,62 @@ $(document).on('ready', function() {
     });
 
 
+    $('.carousel-cases').slick({
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        // centerMode: true,
+        focusOnSelect: true,
+        arrow: true,
+        infinite: true,
+        responsive: [{
+            breakpoint: 1030,
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll: 1,
+            }
+        }, {
+            breakpoint: 767,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+            }
+        }]
+    });
+
+    $('.carousel-parceiros').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        // centerMode: true,
+        focusOnSelect: true,
+        arrow: true,
+        infinite: true,
+        responsive: [{
+            breakpoint: 1030,
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll: 1,
+            }
+        }, {
+            breakpoint: 767,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+            }
+        }]
+    });
+
+
+
+
+
 
 });
 
 $(document).ready(function() {
+
+    $(".redes-sociais-topo ul li a").hover(function() {
+        $(".redes-sociais-topo").toggleClass("ativo");
+    });
 
     $(".navbar-nav li a").click(function() {
         $(".navbar-collapse.collapse").removeClass("in");

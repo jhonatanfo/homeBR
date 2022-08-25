@@ -29,17 +29,22 @@ body {
     position: absolute;
 }
 
+.navbar-default .navbar-nav li,
+.navbar-default .navbar-nav li a {
+    transition: 0.2s;
+}
+
 .navbar-default .navbar-nav>li>a {
     padding: 7px 29px;
     margin: 0 5px;
     letter-spacing: 0.3px;
-    transition: 0.2s;
     font-style: normal;
     font-weight: 600;
     font-size: 15.1765px;
     line-height: 23px;
     border-radius: 31px;
     color: #FFFFFF;
+    transition: 0.2s;
 }
 
 .navbar-nav {
@@ -73,7 +78,7 @@ body {
 /***/
 
 .princial-banner .box-slide {
-    height: 100vh;
+    height: 937px;
     padding: 0;
     background: black;
     display: grid !important;
@@ -88,11 +93,11 @@ body {
 }
 
 .princial-banner .box-slide video {
-    width: 890px;
+    width: 1110px;
     object-fit: cover;
     margin: 0 auto;
     display: grid;
-    margin-top: 67px;
+    margin-top: 40px;
     align-items: center;
 }
 
@@ -101,7 +106,7 @@ body {
 
 .princial-banner .slick-dots {
     position: absolute;
-    top: 50%;
+    top: 47%;
     width: 39px;
     left: 50%;
     margin-left: -500px;
@@ -113,17 +118,20 @@ body {
 }
 
 .princial-banner .slick-dots li a {
-    color: white;
-    font-size: 20px;
-    font-weight: 100;
-    text-decoration: none;
     transition: 0.2s;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 19.1765px;
+    line-height: 31px;
+    border-radius: 31px;
+    color: #FFFFFF;
+    text-decoration: none;
 }
 
 .princial-banner .slick-dots li:hover a,
 .princial-banner .slick-dots li.slick-active a,
 .princial-banner .slick-dots li.slick-active a:hover {
-    color: #1285c7;
+    color: #1189ca;
 }
 
 .princial-banner .slick-dots li:hover a::after {
@@ -142,7 +150,7 @@ body {
 }
 
 .princial-banner .slick-dots li.slick-active a::after {
-    background: #1188c9;
+    background: #1189ca;
     width: 65px;
     margin: -16px 0 0 -80px;
 }
@@ -161,12 +169,27 @@ body {
 
 .redes-sociais-topo span {
     width: 1px;
-    height: 247px;
+    height: 575px;
     background: #D9D9D9;
     border-radius: 8px;
     display: block;
     margin: 0 auto;
-    margin-bottom: 30px;
+    margin-bottom: 54px;
+}
+
+.redes-sociais-topo span:after {
+    content: "";
+    width: 1px;
+    height: 0px;
+    border-radius: 8px;
+    display: block;
+    margin: 0 auto;
+    transition: 0.3s;
+}
+
+.redes-sociais-topo.ativo span:after {
+    height: 575px;
+    background: #0E7CCA;
 }
 
 .redes-sociais-topo ul {
@@ -184,14 +207,23 @@ body {
     display: block;
     background-position: center;
     background-repeat: no-repeat;
+    transition: 0.2s;
 }
 
 .redes-sociais-topo ul li i.icon-meta {
     background-image: url("../img/icon-meta.png");
 }
 
+.redes-sociais-topo ul li:hover i.icon-meta {
+    background-image: url("../img/icon-meta-hover.png");
+}
+
 .redes-sociais-topo ul li i.icon-linkedin {
     background-image: url("../img/icon-linkedin.png");
+}
+
+.redes-sociais-topo ul li:hover i.icon-linkedin {
+    background-image: url("../img/icon-linkedin-hover.png");
 }
 
 
@@ -202,6 +234,7 @@ body {
     background-position: right bottom;
     background-repeat: no-repeat;
     padding-bottom: 216px;
+    background-color: black;
 }
 
 .bg-sobre h2 {
@@ -210,6 +243,7 @@ body {
     font-size: 26.3911px;
     line-height: 40px;
     color: #FFFFFF;
+    margin-bottom: 42px;
 }
 
 .bg-sobre h2 b {
@@ -224,10 +258,10 @@ body {
     content: "";
     background: url("../img/sobre-left.png");
     width: 679px;
-    height: 452px;
+    height: 474px;
     position: absolute;
     left: 50%;
-    margin-left: -64.8%;
+    margin-left: -57.8%;
     margin-top: 101px;
     border-radius: 0 50px 0 0;
     background-size: cover;
@@ -240,7 +274,8 @@ body {
     font-size: 16.4821px;
     line-height: 25px;
     color: #FFFFFF;
-    padding-right: 143px;
+    padding-left: 81px;
+    padding-right: 45px;
 }
 
 .bg-sobre-texto p span {
@@ -264,7 +299,7 @@ body {
     font-size: 13px;
     line-height: 20px;
     color: #1E1E1E !important;
-    margin-left: -26.7%;
+    margin-left: -12%;
     border-left: 54px solid #1189CA;
     padding: 25px 50px 25px 93px;
     margin-bottom: 44px;
@@ -276,7 +311,8 @@ body {
     font-size: 13px;
     line-height: 21px;
     color: #FFFFFF;
-    padding-right: 162px;
+    padding-left: 83px;
+    padding-right: 88px;
 }
 
 
@@ -585,6 +621,7 @@ body {
     border: 1px solid rgba(255, 255, 255, 0.5);
     padding: 13px 27px;
     outline: none;
+    width: 100%;
 }
 
  ::-webkit-input-placeholder {
@@ -609,7 +646,8 @@ body {
     border-radius: 8px;
     padding: 7px 20px;
     float: right;
-    margin-right: 15px;
+    margin-right: 0;
+    border: none;
 }
 
 .contato-redes-sociais {
@@ -650,6 +688,7 @@ body {
 /* --- */
 
 footer {
+    background: black;
     padding: 50px 0 0px 0;
 }
 
